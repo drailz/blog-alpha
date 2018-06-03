@@ -197,3 +197,324 @@ Processing by PagesController#about as HTML
 Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/about" for 114.124.141.212 at 2018-06-03 14:06:12 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (282.7ms)
+Completed 500 Internal Server Error in 295ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_home_path' for #<#<Class:0x000000042e9650>:0x007f541c016590>):
+    1: <h2>about</h2>
+    2: About me
+    3: 
+    4: <%= link_to 'Home', root_home_path %>
+  
+app/views/pages/about.html.erb:4:in `_app_views_pages_about_html_erb___3023318346667096519_35083500'
+Started GET "/home" for 114.124.141.212 at 2018-06-03 14:06:43 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (261.8ms)
+Completed 500 Internal Server Error in 266ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_about_path' for #<#<Class:0x000000042e9650>:0x00000003b142e0>):
+    1: <h1>Home</h1>
+    2: This is my home
+    3: 
+    4: <%= link_to 'About', pages_about_path %>
+  
+app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb___3483482662655027128_30976720'
+Started GET "/home" for 114.124.141.212 at 2018-06-03 14:08:01 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (304.4ms)
+Completed 500 Internal Server Error in 317ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_about_path' for #<#<Class:0x00000005356718>:0x007f8b9401ed80>):
+    1: <h1>Home</h1>
+    2: This is my home
+    3: 
+    4: <%= link_to 'About', pages_about_path %>
+  
+app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb___2705218390179072958_43695140'
+Started GET "/about" for 114.124.141.212 at 2018-06-03 14:10:01 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (285.1ms)
+Completed 500 Internal Server Error in 290ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_home_path' for #<#<Class:0x00000005356718>:0x00000004b7c330>):
+    1: <h2>about</h2>
+    2: About me
+    3: 
+    4: <%= link_to 'Home', pages_home_path %>
+  
+app/views/pages/about.html.erb:4:in `_app_views_pages_about_html_erb__2866818372151699283_39577380'
+Started GET "/about" for 114.124.182.68 at 2018-06-03 14:11:34 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (276.0ms)
+Completed 500 Internal Server Error in 280ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_path' for #<#<Class:0x00000005356718>:0x00000002359358>
+Did you mean?  font_path):
+    1: <h2>about</h2>
+    2: About me
+    3: 
+    4: <%= link_to 'Home', root_path %>
+  
+app/views/pages/about.html.erb:4:in `_app_views_pages_about_html_erb__2866818372151699283_18554220'
+Started GET "/about" for 114.124.182.68 at 2018-06-03 14:13:25 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ArgumentError (wrong number of arguments (given 0, expected 1..2)):
+  
+Started GET "/" for 114.124.182.68 at 2018-06-03 14:13:35 +0000
+config/routes.rb:4:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:22:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 114.124.141.212 at 2018-06-03 14:14:41 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (225.3ms)
+Completed 500 Internal Server Error in 238ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `pages_about_path' for #<#<Class:0x00000005323700>:0x00000005321b80>):
+    1: <h1>Home</h1>
+    2: This is my home
+    3: 
+    4: <%= link_to 'About', pages_about_path %>
+  
+app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb___2705218390179072958_43578240'
+Started GET "/" for 114.124.141.212 at 2018-06-03 14:15:03 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (218.9ms)
+Completed 500 Internal Server Error in 223ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `root_about_path' for #<#<Class:0x00000005323700>:0x00000004cef848>
+Did you mean?  root_path):
+    1: <h1>Home</h1>
+    2: This is my home
+    3: 
+    4: <%= link_to 'About', root_about_path %>
+  
+app/views/pages/home.html.erb:4:in `_app_views_pages_home_html_erb___2705218390179072958_40355200'
+Started GET "/" for 114.124.141.212 at 2018-06-03 14:16:13 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 212ms (Views: 209.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.141.212 at 2018-06-03 14:16:16 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.141.212 at 2018-06-03 14:16:18 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.141.212 at 2018-06-03 14:16:59 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.141.212 at 2018-06-03 14:17:01 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.141.212 at 2018-06-03 14:17:04 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.141.212 at 2018-06-03 14:17:05 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.141.212 at 2018-06-03 14:17:05 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.141.212 at 2018-06-03 14:17:06 +0000
+Cannot render console from 114.124.141.212! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 53ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.182.68 at 2018-06-03 14:17:22 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.182.68 at 2018-06-03 14:17:23 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 19ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.182.68 at 2018-06-03 14:17:25 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.182.68 at 2018-06-03 14:17:25 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.182.68 at 2018-06-03 14:17:26 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 31ms (Views: 29.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.182.68 at 2018-06-03 14:17:26 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.182.68 at 2018-06-03 14:17:27 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.182.68 at 2018-06-03 14:17:27 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 33ms (Views: 31.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.182.68 at 2018-06-03 14:17:29 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.182.68 at 2018-06-03 14:17:29 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 114.124.182.68 at 2018-06-03 14:17:30 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 114.124.182.68 at 2018-06-03 14:17:31 +0000
+Cannot render console from 114.124.182.68! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PagesController#about as HTML
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
